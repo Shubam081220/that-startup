@@ -2,6 +2,8 @@ import StartupForm from "@/components/StartupForm";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   const session = await auth();
 
